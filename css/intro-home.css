@@ -57,7 +57,7 @@
 
   .page .header {
     padding: 6% 5%;
-    position: fixed;
+    position: initial;
   }
   
 
