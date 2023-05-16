@@ -56,9 +56,10 @@
   /* CSS For Detail page*/
 
   .page .header {
-    padding: 10% 5%;
+    padding: 6% 5%;
     position: fixed;
   }
+  
 
   .page .header a {
     display: flex;
