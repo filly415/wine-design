@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  /* background-color: #62d2a2; */
+  font-family: "Roboto", "RobotoDraft", sans-serif;
+}
+
+@media (min-width: 220px) {
+  .acceuil,
+  .page {
+    background-image: url(../images/vino-background.png);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: 20% 10%;
+    min-height: 100vh;
+  }
+
+  .acceuil .header,
+  .page .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7% 7%;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    justify-content: space-between;
+    background-image: url(../images/vino-logo-background.svg);
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .acceuil .header a {
+    color: rgb(0 0 0 / 72%);
+    font-size: 1.9rem;
+  }
+
+  .acceuil .header a .arrow-left,
+  .page .header a .arrow-left {
+    background-color: white;
+    padding: 5%;
+    border-radius: 50%;
+  }
+
+  .acceuil .header a .bxs-cart {
+    position: relative;
+  }
+
+  .acceuil .header a .bxs-cart::after {
+    content: "3";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0;
+    border-radius: 50%;
+    line-height: 13px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .acceuil .body {
+    min-height: 85vh;
+    padding: 28% 9% 2rem;
+  }
+
+  .acceuil .body .search-box {
+    display: flex;
+    align-items: center;
+    background: rgb(230 255 241);
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    box-shadow: 3px 1rem 1rem rgba(0, 0, 0, 0.2);
+    opacity: 0.7;
+  }
+
+  .acceuil .body i {
+    font-size: 1.6rem;
+    color: rgba(20, 20, 20, 0.658);
+  }
+
+  .acceuil .body .search-box i {
+    background: rgb(230 255 241);
+  }
+
+  .acceuil .body input {
+    background: rgb(230 255 241);
+    width: 90%;
+    font-size: 1rem;
+    color: black;
+    padding-left: 3%;
+  }
+
+  .acceuil .footer,
+  .page .footer {
+    padding: 2% 9% 1rem;
+    font-size: 1.6rem;
+  }
+
+  .acceuil .footer .menu,
+  .page .footer .menu {
+    display: flex;
+    justify-content: space-around;
+    background: rgb(230 255 241);
+    width: 100%;
+    padding: 5%;
+    border-radius: 6rem;
+    box-shadow: 2px 1rem 1rem rgb(4 4 4 / 25%);
+  }
+
+  .acceuil .footer .menu a,
+  .page .footer .menu a {
+    color: rgb(0 0 0 / 37%);
+    background: rgb(230 255 241);
+    position: relative;
+  }
+
+  .acceuil .footer .menu a.active::before,
+  .page .footer .menu a.active::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #5fcb9c;
+    position: absolute;
+    bottom: -1px;
+    left: 40%;
+    border-radius: 50%;
+  }
+
+  .acceuil .footer .menu a i,
+  .page .footer .menu a i {
+    background: rgb(230 255 241);
+  }
+
+  .acceuil .footer .menu a.active,
+  .page .footer .menu a.active {
+    color: #5fcb9c;
+  }
+
+  /* CSS For Detail page*/
+
+  .page .header {
+    padding: 3% 5%;
+    position: initial;
+  }
+
+  .page .header a {
+    display: flex;
+    align-items: center;
+    color: rgb(0 0 0 / 72%);
+    font-size: 1.1rem;
+  }
+
+  .page .header a .bx-x {
+    background-color: #1fab89;
+    padding: 5%;
+    border-radius: 50%;
+    color: white;
+  }
+
+  .page .header a span.modifier {
+    font-weight: bold;
+    margin-right: 0.7rem;
+    font-size: 1rem;
+  }
+
+  .page .body {
+    padding: 1% 9% 2%;
+  }
+
+  .page .body .produit h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .page .body .produit .resume-produit {
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+  }
+
+  .page .body .produit .resume-produit img {
+    width: 45%;
+  }
+
+  .page .body .produit .resume-produit .resume h2 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+    color: rgb(0 0 0 / 62%);
+  }
+
+  .page .body .produit .resume-produit .resume .details .element {
+    display: grid;
+    background: rgb(201 255 232 / 55%);
+    padding: 5%;
+    border-radius: 5%;
+    margin-bottom: 2%;
+    width: 7rem;
+    font-size: 0.9rem;
+  }
+  .page .body .produit .resume-produit .resume .details .action-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page .body .produit .resume-produit .resume .details .element i {
+    color: white;
+    background: #1fab89;
+    border-radius: 50%;
+    font-size: 1.5rem;
+  }
+
+  .page .body .produit .resume-produit .resume .details .element span {
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+  }
+
+  .page .body .produit .resume-produit .resume .details p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .page .body .description-note .card {
+    margin-top: 3%;
+    border-radius: 0.8rem;
+    padding: 4%;
+    background: rgb(157 243 196 / 88%);
+  }
+
+  .page .body .description-note .card h2 {
+    font-size: 1.11rem;
+    margin-bottom: 5%;
+    font-weight: bold;
+  }
+
+  .page .body .description-note .card p {
+    font-size: 0.9rem;
+    color: rgb(0 0 0 / 76%);
+  }
+
+  .page .body .produit .resume-produit img.flag-italy {
+    width: 20%;
+    margin-left: 5px;
+  }
+
+  .page .body .produit .resume-produit span.flag {
+    display: flex;
+  }
+}
+
+@media (min-width: 600px) {
+  /* Acceuil */
+  .acceuil .header a {
+    font-size: 4rem;
+  }
+
+  .acceuil .header a .bxs-cart::after {
+    width: 35px;
+    height: 35px;
+    right: -10px;
+    line-height: 27px;
+    font-size: 30px;
+  }
+
+  .acceuil .body {
+    background-size: 100% 20%;
+  }
+
+  .acceuil .body i {
+    font-size: 3.5rem;
+  }
+
+  .acceuil .body input {
+    font-size: 2.5rem;
+    padding-left: 3%;
+  }
+
+  .acceuil .footer {
+    font-size: 3.5rem;
+  }
+
+  /* Page détail */
+  .page .header a {
+    font-size: 2.5rem;
+  }
+
+  .page .header a span.modifier {
+    font-size: 1.5rem;
+  }
+
+  .page .body .produit h1 {
+    font-size: 2.5rem;
+  }
+
+  .page .body .produit .resume-produit img {
+    width: 30%;
+  }
+
+  .page .body .produit .resume-produit .resume h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8%;
+  }
+
+  .page .body .produit .resume-produit .resume .details .element {
+    width: 15rem;
+    font-size: 1.3rem;
+  }
+
+  .page .body .produit .resume-produit .resume .details p {
+    font-size: 1.9rem;
+  }
+
+  .page .body .description-note .card h2 {
+    font-size: 1.8rem;
+  }
+
+  .page .body .description-note .card p {
+    font-size: 1.5rem;
+  }
+
+  .page .footer {
+    font-size: 2.5rem;
+    position: inherit;
+  }
+
+  .acceuil .footer .menu a.active::before,
+  .page .footer .menu a.active::before {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page .body .produit .resume-produit .resume .details .element {
+    font-size: 1.5rem;
+  }
+
+  .acceuil .footer,
+  .page .footer {
+    font-size: 3.5rem;
+  }
+}

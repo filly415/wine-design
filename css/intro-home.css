@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  /* background-color: #62d2a2; */
+  font-family: "Roboto", "RobotoDraft", sans-serif;
+}
+
+@media (min-width: 220px) {
+  .acceuil,
+  .page {
+    background-image: url(../images/vino-background.png);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: 20% 10%;
+    min-height: 100vh;
+  }
+
+  .acceuil .header,
+  .page .header {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    padding: 10% 10%;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    justify-content: space-between;
+    background-image: url(../images/vino-logo-background.svg);
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .page .footer .redirect {
+    padding-top: 15%;
+  }
+
+  .page .footer .redirect p {
+    padding:2% 0;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+  }
+
+  .page .footer .redirect p a {
+    color: white;
+  }
+
+  /* CSS For Detail page*/
+
+  .page .header {
+    padding: 10% 5%;
+    position: fixed;
+  }
+
+  .page .header a {
+    display: flex;
+    align-items: center;
+    color: rgb(0 0 0 / 72%);
+    font-size: 1.1rem;
+  }
+
+  .page .header a .bx-x {
+    background-color: #1fab89;
+    padding: 5%;
+    border-radius: 50%;
+    color: white;
+  }
+
+  .page .body {
+    padding: 48% 9% 2%;
+  }
+
+  .page .body .produit h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .page .body .produit .resume-produit {
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+  }
+
+  .page .body .produit .resume-produit img {
+    width: 45%;
+    height: 150px;
+  }
+
+  .page .body .produit .resume-produit .resume h2 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+    color: rgb(0 0 0 / 62%);
+  }
+
+  .page .body .description-note .card {
+    margin: 10% 0;
+    border-radius: 0.8rem;
+    padding: 4%;
+    background: rgb(157 243 196 / 88%);
+  }
+
+  .page .body .description-note .card h2 {
+    font-size: 1.11rem;
+    margin-bottom: 5%;
+    font-weight: bold;
+  }
+
+  .page .body .description-note .card p {
+    font-size: 0.9rem;
+    color: rgb(0 0 0 / 76%);
+  }
+
+}
+
+@media (min-width: 600px) {
+  /* Acceuil */
+  .acceuil .header a {
+    font-size: 4rem;
+  }
+
+  .acceuil .header a .bxs-cart::after {
+    width: 35px;
+    height: 35px;
+    right: -10px;
+    line-height: 27px;
+    font-size: 30px;
+  }
+
+  .acceuil .body {
+    background-size: 100% 20%;
+  }
+
+  .acceuil .body i {
+    font-size: 3.5rem;
+  }
+
+  .acceuil .body input {
+    font-size: 2.5rem;
+    padding-left: 3%;
+  }
+
+  .acceuil .footer {
+    font-size: 3.5rem;
+  }
+
+  .page .body .produit h1 {
+    font-size: 2.5rem;
+  }
+
+  .page .body .produit .resume-produit img {
+    width: 45%;
+    height: 250px;
+  }
+
+  .page .body .produit .resume-produit .resume h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8%;
+  }
+
+  .page .body .produit .resume-produit .resume .details .element {
+    width: 15rem;
+    font-size: 1.3rem;
+  }
+
+  .page .body .produit .resume-produit .resume .details p {
+    font-size: 1.9rem;
+  }
+
+  .page .body .description-note .card h2 {
+    font-size: 1.8rem;
+  }
+
+  .page .body .description-note .card p {
+    font-size: 1.5rem;
+  }
+
+  .page .footer {
+    font-size: 2.5rem;
+    position: inherit;
+  }
+
+  .acceuil .footer .menu a.active::before,
+  .page .footer .menu a.active::before {
+    width: 10px;
+    height: 10px;
+  }
+
+  .page .footer .redirect {
+    padding-top: 10%;
+  }
+
+  .page .footer .redirect p {
+    padding:2% 0;
+    font-size: 2rem;
+    text-align: center;
+    color: #ccc;
+  }
+
+  .page .footer .redirect p a {
+    color: white;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .acceuil .footer,
+  .page .footer {
+    font-size: 3.5rem;
+  }
+}
